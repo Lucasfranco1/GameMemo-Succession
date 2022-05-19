@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #002225;
+    color: #ff7420;
+}
+.super{
+    margin-top: 60px;
+}
+.container{
+    max-width: 37.5rem;
+    margin: auto;
+    height: 100%;
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+}
+
+/* Screen initial */
+#screen-begin{
+    display: block;    
+}
+
+#screen-begin h1{    
+    font-size: 4.125rem;
+    margin-top: 3.125rem;
+    font-family: 'Koulen';
+    font-weight: normal;
+    animation: effectTitle .5s linear forwards;
+}
+
+#screen-begin img{
+    width: 250px;       
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffca35;
+    padding: 10px 30px;
+    color: #002225;
+    font-size:2.8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/* screen-game */
+#screen-game{
+    display: none;    
+}
+#screen-game h1{
+    padding: 20px 0;
+    background-color: #005073;
+    color: #ffff87;
+    opacity: 0;
+    animation: effectTitle .5s linear forwards;
+}
+@keyframes effectTitle {
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#screen-game h2{
+    height: 50px;
+    font-size: 50px;
+    opacity: 0;
+    animation: effectTitle .5s linear forwards;
+}
+#screen-game .line{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#screen-game .number{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    background: transparent;
+    font-size: 50px;
+    border: 2px solid #ffff87;
+    padding: 20px 0;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#screen-game .number:active{
+   background-color: #ffca35; 
+}
+#screen-game .show{
+    animation: show .7s;
+}
+
+@keyframes show {
+    0%{
+        background: transparent;
+    }
+    50%{
+        background: #ffca35;
+    }
+    100%{
+        background: transparent;
+    }
+}
+/* screen-end */
+#screen-end{
+    display: none;
+}
+#screen-end p{
+    margin-top: 50px;
+    font-size: 35px;
+
+}
+#screen-end p span{
+    display: block;
+    font-size: 55px;
+    font-weight: bold;
+}

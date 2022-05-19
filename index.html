@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/neuroelitp.png">
+    <link rel="stylesheet" href="style.css">
+    <title>MemoSuccession</title>
+</head>
+<body>
+    <div class="super">
+        <div class="container">        
+            <div id="screen-begin" > 
+                <div class="title">
+                    <div class="img" style="margin-left: 170px; margin-bottom: 0; width: 250px; height: 250px;">
+                        <img src="img/neuroelitp.png" alt=""> 
+                    </div>  
+                    <h1 style="margin-top:-70px ;">Memo-Succession</h1>  
+                    
+                                                  
+                </div>          
+                <button class="btn" onclick="play()">Play</button>
+                
+            </div>            
+    
+        <div id="screen-game">
+            <h1 id="text">Memorize the sequence</h1>
+            <h2 id="result"> </h2>
+            <div class="line">
+                <span class="number" onclick="compare(this)">0</span>
+                <span class="number" onclick="compare(this)">1</span>
+                <span class="number" onclick="compare(this)">2</span>
+            </div>
+            <div class="line">
+                <span class="number" onclick="compare(this)">3</span>
+                <span class="number" onclick="compare(this)">4</span>
+                <span class="number" onclick="compare(this)">5</span>
+            </div>
+            <div class="line">
+                <span class="number" onclick="compare(this)">6</span>
+                <span class="number" onclick="compare(this)">7</span>
+                <span class="number" onclick="compare(this)">8</span>
+            </div>
+            <div class="line">
+                <span class="number" onclick="compare(this)">9</span>            
+            </div>
+        </div>
+    
+        <div id="screen-end">
+            <p>You have memorized <span id="digits"> 8 </span>digits!</p>
+            <button class="btn" onclick="play()">Play</button>
+        </div>
+    </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
